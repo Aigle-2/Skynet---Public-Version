@@ -1,0 +1,9 @@
+{
+    "enabled": true,
+    "nombreElementsDatasetTest": 800,
+    "debug": true,
+    "optimizerValue": 0.5,
+    "epochNumber": 15,
+    "activationFunction": "relu",
+    "importModel": true
+}

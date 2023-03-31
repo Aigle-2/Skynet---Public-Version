@@ -1,0 +1,10 @@
+##### COMPILATION POUR LE WEB
+node ./node_modules/browserify/bin/cmd.js lib/legacy/main.js > web/bundle.js
+
+
+Les données d'entrainements (uniquement entrainement)
+Mise en place de la structure reseau neuronal (toujours, soit par importation soit via définition par code)
+Entrainement (uniquement entrainement)
+Sortie (toujours)
+Validation
+Mise en place de la télémétrie (web seulement)

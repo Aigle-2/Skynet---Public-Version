@@ -1,0 +1,9 @@
+web/bundle.js
+yarn.lock
+package-lock.json
+node_modules/*
+training/HAL9000/ScreenshotsDataset
+.yarnrc.yml
+.pnp.cjs
+yarn.lock
+.yarn/*

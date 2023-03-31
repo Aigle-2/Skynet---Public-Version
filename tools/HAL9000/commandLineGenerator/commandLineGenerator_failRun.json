@@ -1,0 +1,33 @@
+{
+  "stepCount": "9-1",
+  "message": "Unexpected landing url: https://www.sisley-paris.com/fr-FR/checkout-begin?stage=shipping#shipping should be https://www.sisley-paris.com/fr-FR/echantillons",
+  "failData": {
+    "message": "Wrong landing url",
+    "error": "Unexpected landing url",
+    "step": {
+      "count": "9-1",
+      "label": "Validation panier",
+      "number": 51,
+      "category": "cart_validation",
+      "priority": "blocking"
+    },
+    "block": {
+      "type": "waitfor",
+      "code": "navigation",
+      "parameters": {
+        "targetUrl": "https://www.sisley-paris.com/fr-FR/echantillons"
+      }
+    },
+    "selectors": [],
+    "website": {
+      "currentUrl": {
+        "protocol": "https:",
+        "host": "www.sisley-paris.com",
+        "path": "/fr-FR/checkout-begin",
+        "search": "?stage=shipping",
+        "hash": "#shipping"
+      },
+      "currentStatus": 200
+    }
+  }
+}

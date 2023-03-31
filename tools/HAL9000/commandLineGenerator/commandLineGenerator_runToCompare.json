@@ -1,0 +1,32 @@
+{
+  "stepCount": "4-1",
+  "message": "Wait for url https://www.sisley-paris.com/fr-FR/echantillons : TimeoutError: Navigation timeout of 30000 ms exceeded",
+  "failData": {
+    "message": "Unable to wait for navigation",
+    "error": "Navigation timeout of 30000 ms exceeded",
+    "step": {
+      "count": "4-1",
+      "label": "Validation panier",
+      "category": "cart_validation",
+      "priority": "blocking"
+    },
+    "block": {
+      "type": "waitfor",
+      "code": "navigation",
+      "parameters": {
+        "targetUrl": "https://www.sisley-paris.com/fr-FR/echantillons"
+      }
+    },
+    "selectors": [],
+    "website": {
+      "currentUrl": {
+        "protocol": "https:",
+        "host": "www.sisley-paris.com",
+        "path": "/fr-FR/cart",
+        "search": "?isMobile=true",
+        "hash": null
+      },
+      "currentStatus": 200
+    }
+  }
+}

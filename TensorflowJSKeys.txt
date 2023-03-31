@@ -1,0 +1,15 @@
+    "meanSquaredError",
+    "meanAbsoluteError",
+    "meanAbsolutePercentageError",
+    "meanSquaredLogarithmicError",
+    "squaredHinge",
+    "hinge",
+    "categoricalHinge",
+    "logcosh",
+    "categoricalCrossentropy",
+    "sparseCategoricalCrossentropy", // not working ?
+    "binaryCrossentropy",
+    "kullbackLeiblerDivergence",
+    "poisson",  "optimizer": "0.05"
+    		"loss": "poisson" 73.05%, un peu d'overfit
+    "cosineProximity",

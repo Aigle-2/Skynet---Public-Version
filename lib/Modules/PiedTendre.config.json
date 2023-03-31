@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "nombreElementsDatasetTest": 320,
+  "debug": false,
+  "supervisor": true,
+  "patchTrainingMistakesWithValidationData": false,
+  "activation": "ReLU",
+  "compiler": {
+    "optimizer": "5",
+    "loss": "binaryCrossentropy"
+  },
+  "trainer": {
+    "hardLimit": 30,
+    "epochNumber": 15,
+    "testingTreshold" : 0.99,
+    "temporalCoefficient": 3.5,
+    "learningRateAcceleration": 2,
+    "learningRateMinimumValue": 0.05,
+    "learningRateMaximumValue": 10
+  },
+  "shape": [
+    {
+      "inputShape": [25],
+      "units" : 25,
+      "name": "Entry"
+    },
+    {
+      "type": "dense",
+      "activation": "softmax",
+      "units" : 10,
+      "name": "Exit"
+    }
+  ]
+}

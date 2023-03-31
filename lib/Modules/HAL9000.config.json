@@ -1,0 +1,63 @@
+{
+  "enabled": true,
+  "debug": false,
+  "patchTrainingMistakesWithValidationData": false,
+  "usePreEncodedData": false,
+  "is_web" : false,
+  "supervisor": false,
+  "compiler": {
+    "optimizer": "0.0005",
+    "loss": "binaryCrossentropy"
+  },
+  "activation": "ReLU",
+  "trainer": {
+    "hardLimit":  10,
+    "epochNumber": 50,
+    "testingTreshold": 0.95,
+    "temporalCoefficient": 3.5,
+    "learningRateAcceleration": 2,
+    "learningRateMinimumValue": 0.05,
+    "learningRateMaximumValue": 10
+  },
+  "shape": [
+    {
+      "inputShape": [10],
+      "units": 10
+    },
+    {
+      "type": "dense",
+      "units": 10,
+      "regularizer": "l1L2"
+    },
+    {
+      "type": "dense",
+      "units": 10,
+      "regularizer": "l1L2"
+    },
+    {
+      "type": "dense",
+      "units": 10,
+      "regularizer": "l1L2"
+    },
+    {
+      "type": "dense",
+      "units": 10,
+      "regularizer": "l1L2"
+    },
+    {
+      "type": "dense",
+      "units": 10,
+      "regularizer": "l1L2"
+    },
+    {
+      "type": "dense",
+      "units": 10,
+      "regularizer": "l1L2"
+    },
+    {
+      "type": "dense",
+      "activation": "softmax",
+      "units": 2
+    }
+  ]
+}

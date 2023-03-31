@@ -1,0 +1,46 @@
+{
+    "name": "skynet",
+    "description": "Passage en PO",
+    "version": "0.0.1",
+    "main": "main.js",
+    "scripts": {
+        "start": "nodemon build.js --ignore web/bundle.js"
+    },
+    "author": {
+        "name": "Esteban",
+        "email": "esteban.mrsuricate@gmail.com"
+    },
+    "dependencies": {
+        "@mapbox/node-pre-gyp": "^1.0.1",
+        "@tensorflow/tfjs": "^3.12.0",
+        "@tensorflow/tfjs-core": "^3.12.0",
+        "@tensorflow/tfjs-node": "^3.12.0",
+        "@tensorflow/tfjs-node-gpu": "^3.12.0",
+        "@tensorflow/tfjs-vis": "^1.5.1",
+        "browserify": "^17.0.0",
+        "colors": "1.4.0",
+        "commander": "^7.2.0",
+        "js-levenshtein": "^1.1.6",
+        "lodash": "^4.17.21",
+        "mapbox": "1.0.0-beta10",
+        "moment": "^2.29.1",
+        "moment-timezone": "^0.5.33",
+        "performance-now": "^2.1.0",
+        "require-dir": "^1.2.0",
+        "require-directory": "^2.1.1",
+        "require-main-filename": "^2.0.0",
+        "resemblejs": "^4.0.0",
+        "stream-json": "^1.7.3"
+    },
+    "engines": {
+        "node": ">=10"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.15",
+        "@babel/plugin-proposal-class-properties": "^7.13.0",
+        "@babel/preset-env": "^7.13.15",
+        "babelify": "^10.0.0",
+        "nodemon": "^2.0.7"
+    },
+    "packageManager": "yarn@3.0.2"
+}
